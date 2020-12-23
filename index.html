@@ -7,41 +7,59 @@
     <title>Document</title>
 </head>
 <body>
+   
     <div class="container">
         <div class="row">
-            <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+           
             <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                 <h2>PATIENT DETAILS</h2>
                 <table class="table table-borderless">
                     <tr>
                         <td>Patient Name</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="pname" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Address</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="address"  type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Phone Number</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="pno" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Email id</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="email" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Symptoms</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="symptoms" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><Button class="btn btn-success">SUBMIT</Button></td>
+                        <td><Button onclick="mybuttonclick()" class="btn btn-success">SUBMIT</Button></td>
                     </tr>
                 </table>
             </div>
-            <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+           
         </div>
     </div>
+    <script>
+      function mybuttonclick(){
+        var getPatientName=document.getElementById("pname").value
+        var getAddress=document.getElementById("address").value
+        var getPhone=document.getElementById("pno").value
+        var getEmail=document.getElementById("email").value
+        var getSymptoms=document.getElementById("symptoms").value
+        console.log(getPatientName)
+        console.log(getAddress)
+        console.log(getPhone)
+        console.log(getEmail)
+        console.log(getSymptoms)
+
+
+
+      }
+    </script>
     
 </body>
 </html>
